@@ -1,0 +1,45 @@
+body {
+background-image:url('/static/img/background.jpg');
+background-size:cover;
+}
+h1 {
+text-align:center;
+color:orange;
+font-size:50px;
+}
+form {
+padding:2%;
+
+
+
+}
+#form-body {
+padding:1%;
+text-align:center;
+}
+label {
+font-size:40px;
+
+}
+input {
+padding:1%;
+font-size:20px;
+border-radius:50px;
+background-color:transparent;
+color:white;
+}
+#result{
+padding-left:35%;
+border-radius:50px;
+width:35%;
+
+}
+p {
+padding:20px;
+border-style:dashed;
+border-width:10px;
+border-color:white;
+font-size:40px;
+color:white;
+
+}

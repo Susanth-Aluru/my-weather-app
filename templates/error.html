@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Flask</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}">
+</head>
+<body>
+<h1>Weather App</h1>
+<form method="POST">
+    <div id="form-body">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="Bengaluru"><br>
+        <input type="submit">
+        </div>
+</form>
+<div id="result">
+    <p font-size="30px" color="red">Not Valid</p>
+    </div>
+</body>
