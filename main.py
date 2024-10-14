@@ -2,6 +2,11 @@
 import requests
 from flask import Flask,request, render_template
 from json import dumps
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # This line brings all environment variables from .env into os.environ
+
 
 app = Flask(__name__)
 
@@ -12,8 +17,7 @@ def index():
 @app.route("/",methods=["POST","GET"])
 def index_data():
         city=request.form["city"]
-        with open("apikey","r") as f:
-            api_key = f.read()
+        api_key = os.environ['api']
         url = f'http://api.weatherstack.com/current?access_key={api_key}&query={city}'
         response = requests.get(url)
 
